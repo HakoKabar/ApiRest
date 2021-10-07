@@ -1,11 +1,20 @@
 
+from django.db import router
 from django.urls import path,include
 from rest_framework import routers
-from .views import ClientViewSet
+from .views import ClientViewSet,ReservationViewSet
 
-router=routers.DefaultRouter()
-router.register('client',ClientViewSet)
+RouterClient=routers.DefaultRouter()
+RouterClient.register('client',ClientViewSet)
+RouterClient.register('reservation',ReservationViewSet)
+
+
+
+
 urlpatterns = [
-    path('',include(router.urls)),
+    
+    path('',include(RouterClient.urls)),
+    
+    
     
 ]
