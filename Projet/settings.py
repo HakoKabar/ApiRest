@@ -38,10 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'client',
+    'enterprise',
     'rest_framework',
-    'django_filters'
-    
+    'django_filters',
+
 ]
+
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
@@ -86,8 +88,14 @@ WSGI_APPLICATION = 'Projet.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Project_BD',
+        'USER': 'project_user',
+        'PASSWORD': '0760Hako',
+        'HOST':'localhost',
+        'PORT':'5432'
+
+
     }
 }
 
