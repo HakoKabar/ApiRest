@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9f72a44-9542-4372-8683-20b3302ddf52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/migrations/0022_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0023_alter_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0024_alter_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0025_remove_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0026_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0027_remove_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0028_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0029_remove_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0030_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0031_remove_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0032_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0033_alter_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0034_alter_client_datedenaissance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0035_alter_client_telephone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0036_auto_20211008_1955.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/migrations/0037_alter_client_datedenaissance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projet/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +30,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1z8pRmdcicvDVy92Ouvo3xUVKrD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -40,5 +61,16 @@
       <updated>1633539564789</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

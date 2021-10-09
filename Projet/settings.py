@@ -39,9 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'client',
     'rest_framework',
-    'django_filters'
+    'django_filters',
 
 ]
+
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
@@ -120,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'fr-FR'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
