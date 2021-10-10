@@ -21,6 +21,6 @@ class Reservation(models.Model):
     Date_De_Fin_De_Reservation=models.DateField(null=False)
 
     class Meta :
-        unique_together=(('Reseve_Par','Nom_Client'),)
+      #  unique_together=(('Reseve_Par','Nom_Client'),)
         index_together =(('Reseve_Par','Nom_Client'),)
 
