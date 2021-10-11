@@ -16,11 +16,9 @@ class Enterprise(models.Model):
 class Reservation(models.Model):
     Nom_Client =models.ForeignKey(User,on_delete=models.CASCADE)
     Reseve_Par=models.ForeignKey(Enterprise,on_delete=models.CASCADE) 
-    Type_De_Camion=models.IntegerField(choices=((1,'Break'),(2,'Forgon'),(3,'Camoin 20m'),(4,'Camion Poid Lourd'),(5,'Porteur')),default=0)
-    Date_De_Debut_De_Reservation=models.DateField(null=False)
-    Date_De_Fin_De_Reservation=models.DateField(null=False)
-
+    Type_De_Camion=models.IntegerField(default=0)
+ 
     class Meta :
-      #  unique_together=(('Reseve_Par','Nom_Client'),)
+        unique_together=(('Reseve_Par','Nom_Client'),)
         index_together =(('Reseve_Par','Nom_Client'),)
 
