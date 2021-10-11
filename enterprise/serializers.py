@@ -6,7 +6,7 @@ from .models import Enterprise,Reservation
 class Enterprise_Serializer(serializers.ModelSerializer):
     class Meta :
         model = Enterprise
-        fields='__all__'
+        fields=('id','NomE','TelephoneE','AdresseE','DescriptionE','nbr_de_reservation','moyen_de_camion')
 
 class Reservation_Serializer(serializers.ModelSerializer):
     class Meta :
