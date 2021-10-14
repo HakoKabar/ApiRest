@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'client',
     'enterprise',
     'rest_framework',
+    'rest_framework.authtoken',
     'django_filters',
 
 ]
@@ -48,8 +49,10 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend',
-        'rest_framework.filters.SearchFilter'
-    ]
+        'rest_framework.filters.SearchFilter'],
+        
+    'DEFAULT_PERMISSION_CLASSES' :['rest_framework.permissions.IsAuthenticated'],
+    'DEFAULT_AUTHENTICATION_CLASSES' :['rest_framework.authentication.TokenAuthentication'],
 }
 
 MIDDLEWARE = [

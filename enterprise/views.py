@@ -5,10 +5,15 @@ from .models import Enterprise,Reservation
 from .serializers import Enterprise_Serializer,Reservation_Serializer
 from rest_framework.response import Response
 from rest_framework.decorators import action
-
 from django.contrib.auth.models import User
-
+#-----------------Import pour auto Token-------------------------
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from rest_framework.authtoken.models import Token
+from django.conf import settings
+#----------------------------------------------------------------
 class Enterprise_ViewSet(viewsets.ModelViewSet):
+   
     queryset=Enterprise.objects.all()
     serializer_class=Enterprise_Serializer
 
