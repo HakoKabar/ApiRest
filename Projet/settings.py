@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-*cb*)8s0l2@n9wy9g&7x*b47tckv%btg3fru$pj4ja4wv&r%h+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
 
 
@@ -39,9 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'client',
     'enterprise',
+    'meteo',
     'rest_framework',
     'rest_framework.authtoken',
+    'dj_rest_auth',# il faut faire pip install dj_rest_auth
     'django_filters',
+   
 
 ]
 
@@ -50,9 +54,9 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend',
         'rest_framework.filters.SearchFilter'],
-        
-    'DEFAULT_PERMISSION_CLASSES' :['rest_framework.permissions.IsAuthenticated'],
-    'DEFAULT_AUTHENTICATION_CLASSES' :['rest_framework.authentication.TokenAuthentication'],
+
+  #  'DEFAULT_PERMISSION_CLASSES' :['rest_framework.permissions.IsAuthenticated'],
+   # 'DEFAULT_AUTHENTICATION_CLASSES' :['rest_framework.authentication.TokenAuthentication'],
 }
 
 MIDDLEWARE = [

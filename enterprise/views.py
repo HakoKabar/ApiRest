@@ -6,12 +6,11 @@ from .serializers import Enterprise_Serializer,Reservation_Serializer
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from django.contrib.auth.models import User
-#-----------------Import pour auto Token-------------------------
-from django.db.models.signals import post_save
-from django.dispatch import receiver
-from rest_framework.authtoken.models import Token
-from django.conf import settings
-#----------------------------------------------------------------
+
+
+
+
+
 class Enterprise_ViewSet(viewsets.ModelViewSet):
    
     queryset=Enterprise.objects.all()
@@ -62,5 +61,4 @@ class Enterprise_ViewSet(viewsets.ModelViewSet):
 class Reservation_ViewSet(viewsets.ModelViewSet):
     queryset=Reservation.objects.all()
     serializer_class=Reservation_Serializer
-
 
